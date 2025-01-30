@@ -18,23 +18,25 @@ This repository contains a solution to an Express.js middleware exercise using N
 Express-Middleware-Project-2/
 ├── app.js
 ├── package.json
+├── logger.js
 ```
 - **Middleware logic**: Implemented in `app.js` to handle logging and authentication.
+- **Logging Middleware**: Implemented in `logger.js` to log request details.
 - **Server execution**: Managed using Express and Nodemon.
 
 ### Solution Overview:
 
 1. **Middleware with Express.js**:
-   - Logs request details to the console.
+   - Logs request details to the console using `logger.js`.
    - Checks authorization for accessing specific routes.
 
 2. **Defined Routes**:
-   - `/`: Returns the text `"ברוכים הבאים לדף הבית!"`.
-   - `/admin`: If `user=admin` is provided, returns `"ברוכים הבאים לעמוד הניהול!"`. Otherwise, denies access.
-   - `/public`: Returns the text `"זהו דף ציבורי."`, accessible to all users.
+   - `/`: Returns the text `"Welcome to the Home Page!"`.
+   - `/admin`: If `user=admin` is provided, returns `"Welcome to the Admin Page!"`. Otherwise, denies access.
+   - `/public`: Returns the text `"This is a public page."`, accessible to all users.
 
 ### Example Routes:
-- `GET /`: Displays `"ברוכים הבאים לדף הבית!"`.
+- `GET /`: Displays `"Welcome to the Home Page!"`.
 - `GET /admin`: Requires `user=admin`, otherwise returns `403 Access Denied`.
 - `GET /public`: Always accessible.
 
