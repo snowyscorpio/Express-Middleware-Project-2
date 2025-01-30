@@ -53,3 +53,9 @@ Express-Middleware-Project-2/
 ### Dependencies:
 - **express** (`^4.21.2`): A fast, minimalist web framework for Node.js.
 - **nodemon**: Automatically restarts the server when file changes are detected.
+
+Have a great day ♡
+
+
+
+![CuteCat](https://github.com/user-attachments/assets/829711bc-b2ed-46ea-b09a-b7825d51b2fe)
